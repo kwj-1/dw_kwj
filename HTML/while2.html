@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script> 
+            let item = ["이름","나이","전화번호","이메일"];
+
+            let input = [];
+            let flag=true;
+
+            while(flag){
+
+                flag=false;
+
+                for(let i=0;i<4;i++){
+                    input[i]=prompt(item[i]+"를입력하시오.")
+                    flag=flag ||!input[i];
+                }    
+            }
+            console.log(input);
+            //        flag=!(input[0] && !input[i] &&input[2]&&input[3])
+    </script>
+</body>
+</html>

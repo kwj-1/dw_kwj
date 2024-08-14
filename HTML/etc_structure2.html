@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCS3 Selection Basic</title>
+    <style>
+        ul{overflow: hidden;}
+        li{width:80px;
+            float:left;
+            list-style: none;
+            text-align:center;
+            padding:15px;
+            color:white;
+            cursor:pointer;
+            
+            background:gray;
+        }
+            ul li:hover{background:gray;}
+            ul li:active{background:white;}
+            li:first-child{border-radius: 10px 0 0 10px;}
+            li:last-child{border-radius: 0 10px 10px 0px;}
+            li:nth-child(2n){background: red;}
+            li:nth-child(2n+1){background: blue;}
+        ul li > a{
+            color:white
+            }
+        </style>
+</head>
+<body>
+    <UL>
+        <li><a href="http://www.naver.com"></a>Naver</li>
+        <li><a href="http://www.google.com"></a>Google</li>
+        <li><a href="http://www.daum.net"></a>Daum</li>
+        <li><a href="http://www.tjdaewoo.co.kr"></a>DWAcademy</li>
+    </UL>
+</body>
+</html>

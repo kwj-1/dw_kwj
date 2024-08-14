@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+        #wrap{
+            width: 1200px;
+            height: 250px;
+            position: relative;
+        }
+        #wrap > div#big_box{
+            width: 100%;
+            height: 80px;
+            position: absolute;
+            left: 0; bottom: 0;
+            overflow: hidden;
+        }
+        #wrap > div#big_box >div{
+            float: left;
+        }
+        #wrap div#left_box{
+            display: block;
+            width: 25%;
+            height: 80px;
+            background-color: brown;
+            position: absolute;
+            left: 0; bottom: 0;
+        }
+        #wrap div#rainbow{
+            overflow: hidden;
+        }
+        #wrap div#rainbow div{
+            width: 9.375%;
+            height: 80px;
+            float: left;   
+        }
+        .red{
+            background-color: red;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{background-color: blue;}
+        .navy{background-color: navy;}
+        .purple{background-color: purple;}
+        .black{background-color: black;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="big_box">
+            <div id="left_box"></div>
+            <div id="rainbow">
+                <div class="red"></div>
+                <div class="orange"></div>
+                <div class="yellow"></div>
+                <div class="green"></div>
+                <div class="blue"></div>
+                <div class="navy"></div>
+                <div class="purple"></div>
+                <div class="black"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
